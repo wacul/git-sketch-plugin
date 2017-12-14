@@ -29,7 +29,7 @@ SKETCH_IGNORE=$(upsearch ".sketchignore")
 IGNORE=$([ -e "$SKETCH_IGNORE" ] && (cat "$SKETCH_IGNORE" | sed '/^$/d' | sed 's/^/^/' | sed 's/$/$/' | tr '\n' ',') || echo "")
 
 # get list of artboard names to export
-ARTBOARDS=$("$BUNDLE_PATH"/Contents/Resources/sketchtool/bin/sketchtool list artboards "$FILENAME" --include-symbols=YES | python "$(dirname "$0")"/getArtboardNames.py "$IGNORE" | tr '\n' ',')
+ARTBOARDS=$("$BUNDLE_PATH"/Contents/Resources/sketchtool/bin/sketchtool list artboards "$FILENAME" --include-symbols=NO | python "$(dirname "$0")"/getArtboardNames.py "$IGNORE" | tr '\n' ',')
 
 mkdir -p "$EXPORT_FOLDER" || true
 
