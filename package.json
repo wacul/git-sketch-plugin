@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mathieudutour/git-sketch-plugin.git"
+    "url": "git+https://github.com/wacul/git-sketch-plugin.git"
   },
   "author": "Mathieu Dutour <mathieu@dutour.me> (http://mathieu.dutour.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mathieudutour/git-sketch-plugin/issues"
+    "url": "https://github.com/wacul/git-sketch-plugin/issues"
   },
-  "homepage": "https://github.com/mathieudutour/git-sketch-plugin#readme",
+  "homepage": "https://github.com/wacul/git-sketch-plugin#readme",
   "devDependencies": {
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-react-jsx": "^6.8.0",
